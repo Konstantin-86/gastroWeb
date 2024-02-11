@@ -1,0 +1,140 @@
+.greenCircle {
+  position: absolute;
+  min-width: 960px;
+  min-height: 960px;
+  width: 64%;
+  height: calc(64vw);
+  background-color: var(--greenColor);
+  border-radius: 50%;
+  top: -9%;
+  right: -16%;
+  z-index: -1;
+}
+
+.innerImage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 106%;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: -1;
+}
+.whiteBox {
+  position: absolute;
+  left: 8%;
+  top: 58%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  width: 55%;
+  height: 55%;
+  background-color: var(--whiteColor);
+  border: 40px solid var(--whiteColor);
+}
+.whiteBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.container {
+  position: relative;
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.inner {
+  margin-top: 200px;
+  max-width: 526px;
+  margin-bottom: 200px;
+}
+.title {
+  color: var(--blackColor);
+  font-family: var(--secondFamily);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 40px;
+}
+.title span {
+  color: var(--greenColor);
+}
+.titleText {
+  color: var(--blackColor);
+  font-family: var(--secondFamily);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.textStrong {
+  font-weight: 700;
+  margin-top: 40px;
+}
+@media (max-width: 1366px) {
+  .greenCircle {
+    min-height: 0;
+    min-width: 0;
+  }
+  .whiteBox {
+    top: 33%;
+    left: 18%;
+    top: 33%;
+    width: 45%;
+    height: 45%;
+    border: 17px solid var(--whiteColor);
+    transform: translate(0, 0);
+  }
+  .inner {
+    margin-top: 150px;
+    max-width: 325px;
+    margin-bottom: 50px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .titleText {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .inner {
+    max-width: 243px;
+    margin-top: 75px;
+    margin-left: 60px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .titleText {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .greenCircle {
+    width: 520px;
+    height: 520px;
+    top: -190px;
+    right: 0;
+    left: -10px;
+  }
+  .whiteBox {
+    width: 34%;
+    height: 34%;
+    top: 318px;
+    left: 160px;
+    right: 0;
+  }
+  .inner {
+    margin-top: 225px;
+    margin-left: 30px;
+    max-width: 100%;
+    margin-right: 30px;
+  }
+  .title,
+  .titleText {
+    margin-bottom: 10px;
+  }
+  .textStrong {
+    margin-top: 10px;
+  }
+}

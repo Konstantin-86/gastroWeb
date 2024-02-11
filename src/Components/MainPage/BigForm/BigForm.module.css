@@ -1,0 +1,240 @@
+.container {
+  max-width: 1286px;
+  margin: 0 auto;
+  padding: 0 5px;
+  margin-top: 100px;
+}
+.boxTopButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.topBtn {
+  width: 580px;
+  height: 62px;
+  background-color: #dee6ee;
+  color: var(--blackColor);
+  font-family: var(--secondFamily);
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 190px;
+  box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.3);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.topBtnActive {
+  width: 580px;
+  height: 62px;
+  background-color: var(--greenColor);
+  color: var(--whiteColor);
+  font-family: var(--secondFamily);
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 190px;
+  box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.3);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.innerAllProg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 86px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.itemProgActive {
+  color: var(--greenColor);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.itemProg {
+  color: var(--blackColor);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.itemProgName {
+  text-align: center;
+  font-family: var(--secondFamily);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.itemProgCallories {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.innerBigTable {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.firstTable {
+  max-width: 380px;
+  min-height: 400px;
+  padding: 40px 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.3);
+  background-color: var(--greenColor);
+  color: var(--whiteColor);
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.firstTableNone {
+  display: none;
+}
+.spanTitle {
+  color: var(--whiteColor);
+  font-family: var(--secondFamily);
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.spanCall {
+  color: var(--whiteColor);
+  font-size: 18px;
+  font-weight: 500;
+}
+.firstTableDecr {
+  margin-top: 20px;
+  color: var(--whiteColor);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 1366px) {
+  .firstTable {
+    padding: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .firstTable {
+    max-width: 300px;
+    min-height: 306px;
+    padding: 20px 30px;
+  }
+  .spanTitle {
+    font-size: 16px;
+  }
+  .spanCall,
+  .firstTableDecr {
+    font-size: 14px;
+  }
+  .innerAllProg {
+    gap: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .topBtn {
+    width: 450px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .topBtnActive {
+    width: 450px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .itemProgName {
+    font-size: 14px;
+  }
+  .itemProgCallories {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .leftItemTable {
+    width: 100%;
+    max-width: 222px;
+  }
+  .firstTable {
+    max-width: 222px;
+  }
+  .itemProgName {
+    font-size: 10px;
+  }
+  .itemProgCallories {
+    font-size: 8px;
+  }
+  .itemProgName {
+    font-size: 10px;
+  }
+  .itemProgCallories {
+    font-size: 8px;
+  }
+  .topBtn,
+  .topBtnActive {
+    width: 339px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .container {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .innerBigTable {
+    flex-wrap: wrap;
+  }
+  .firstTable,
+  .leftItemTable {
+    width: 100%;
+    max-width: 420px;
+  }
+  .leftItemTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .itemProgActive {
+    width: 100px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.3);
+    border-radius: 7px;
+  }
+  .itemProg {
+    width: 100px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.3);
+    border-radius: 7px;
+  }
+
+  .itemProgName {
+    font-size: 12px;
+  }
+  .itemProgCallories {
+    font-size: 10px;
+  }
+  .innerAllProg {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+  }
+  .boxTopButtons {
+    flex-wrap: wrap;
+  }
+  .topBtn,
+  .topBtnActive {
+    max-width: 280px;
+    width: 100%;
+  }
+  .container {
+    margin-top: 30px;
+  }
+}

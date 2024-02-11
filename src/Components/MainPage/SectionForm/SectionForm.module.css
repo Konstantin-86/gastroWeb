@@ -1,0 +1,337 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.innerForm {
+  max-width: 430px;
+}
+.title {
+  color: var(--blackColor);
+  text-align: center;
+  font-family: var(--secondFamily);
+  font-size: 30px;
+  font-weight: 700;
+}
+.formText {
+  color: var(--blackColor);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 133.8%;
+  letter-spacing: 0.4px;
+  padding-left: 19px;
+  text-indent: 19px;
+  margin-bottom: 30px;
+}
+.lblName,
+.lblPhone {
+  display: block;
+  color: var(--greenColor);
+  font-family: var(--secondFamily);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 133.8%;
+  letter-spacing: 0.45px;
+  padding-left: 19px;
+}
+.lblName {
+  color: var(--greenColor);
+}
+.lblPhone {
+  color: #f87676;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.formInpt {
+  width: 418px;
+  height: 40px;
+  border-radius: 190px;
+  background: #dee6ee;
+  outline: 2px solid transparent;
+  border: none;
+  padding: 10px 20px 9px 20px;
+  color: var(--blackColor);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 133.8%;
+  letter-spacing: 0.4px;
+  margin-bottom: 30px;
+}
+.formInpt:focus {
+  outline: 2px solid #dee6ee;
+  background: #fff;
+}
+.inptDisc + label {
+  position: relative;
+  margin-left: 62px;
+  color: var(--blackColor);
+  font-family: var(--secondFamily);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 133.8%;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.inptDisc {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.inptDisc + label::after {
+  content: "";
+  position: absolute;
+  left: -44px;
+  top: -5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #dee6ee;
+}
+.inptDisc:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -44px;
+  top: -5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 7px solid #dee6ee;
+  background-color: var(--greenColor);
+}
+.btnPhone {
+  color: var(--greenColor);
+  font-family: var(--secondFamily);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 133.8%;
+  letter-spacing: 0.55px;
+  padding: 16px 29px 15px 30px;
+  border-radius: 190px;
+  border: 3px solid var(--greenColor);
+  box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.3);
+  display: flex;
+  margin: 0 auto;
+  margin-top: 32px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.TextBetweenBtn {
+  margin-top: 11px;
+  margin-bottom: 10px;
+  color: var(--blackColor);
+  text-align: center;
+  font-family: var(--secondFamily);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 133.8%;
+  letter-spacing: 0.55px;
+}
+.btnOnline {
+  padding: 14px 69px;
+  color: var(--whiteColor);
+  text-align: center;
+  font-family: var(--secondFamily);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133.8%;
+  letter-spacing: 0.6px;
+  border-radius: 190px;
+  background: var(--greenColor);
+  border: 3px solid var(--greenColor);
+  box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.3);
+
+  display: flex;
+  margin: 0 auto;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.innerElem,
+.innerElemOff {
+  width: 680px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+.innerElem::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  width: 9px;
+  height: 16px;
+  background-image: url(../../../assets/images/Icons/ArrowFaq.svg);
+  transition: all 0.2s;
+}
+.innerElemOff::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  width: 9px;
+  height: 16px;
+  background-image: url(../../../assets/images/Icons/ArrowFaq.svg);
+  transition: all 0.2s;
+  transform: rotate(450deg);
+}
+
+.titleFaq {
+  margin-bottom: 35px;
+  color: var(--blackColor);
+  text-align: center;
+  font-family: var(--secondFamily);
+  font-size: 25px;
+  font-weight: 700;
+}
+.elemText {
+  background: var(--whiteColor);
+  box-shadow: 0px 0px 20px 0px rgba(86, 86, 86, 0.2);
+  color: var(--blackColor);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.4px;
+  text-indent: 15px;
+  border-radius: 7px;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.elemTextActive {
+  padding: 10px 20px;
+  background: var(--whiteColor);
+  box-shadow: 0px 0px 20px 0px rgba(86, 86, 86, 0.2);
+  color: var(--blackColor);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.4px;
+  text-indent: 15px;
+  margin: 15px 0;
+  border-radius: 7px;
+  max-height: 260px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s;
+}
+.elemTitle {
+  border-radius: 190px;
+  padding: 10px 20px;
+  background: var(--whiteColor);
+  box-shadow: 0px 0px 20px 0px rgba(86, 86, 86, 0.2);
+  color: var(--blackColor);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 133.8%;
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: 768px) {
+  .btnOnline:hover {
+    color: var(--greenColor);
+    background-color: var(--whiteColor);
+    border: 3px solid var(--greenColor);
+  }
+  .btnPhone:hover {
+    color: var(--whiteColor);
+    background-color: var(--greenColor);
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+  }
+  .titleFaq {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 769px) {
+  .title {
+    font-size: 25px;
+  }
+  .formText {
+    text-align: center;
+  }
+  .formInpt {
+    width: 418px;
+  }
+  .lblName,
+  .lblPhone {
+    text-align: center;
+  }
+  .formInpt {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  .innerElem,
+  .innerElemOff {
+    width: 100%;
+    max-width: 690px;
+    padding-right: 40px;
+  }
+
+  .innerElem::after {
+    right: 66px;
+  }
+  .innerElemOff::after {
+    right: 66px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .formText {
+    font-size: 12px;
+  }
+
+  .inptDisc + label {
+    font-size: 14px;
+  }
+  .btnPhone {
+    font-size: 18px;
+    padding: 18px 42px;
+  }
+  .btnOnline {
+    font-size: 20px;
+    padding: 16px 62px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin-bottom: 50px;
+  }
+  .innerElem,
+  .innerElemOff {
+    padding-right: 0;
+  }
+  .innerElem::after {
+    right: 20px;
+  }
+  .innerElemOff::after {
+    right: 20px;
+  }
+
+  .elemTitle {
+    font-size: 12px;
+    padding-right: 40px;
+  }
+  .elemTextActive {
+    font-size: 11px;
+  }
+}

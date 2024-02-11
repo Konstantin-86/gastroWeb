@@ -1,0 +1,41 @@
+.nextBtn,
+.prevBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prevBtn {
+  transform: rotate(180deg);
+}
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+@media (min-width: 768px) {
+  .nextBtn:hover {
+    background-color: var(--greenColor);
+  }
+  .prevBtn:hover {
+    background-color: var(--greenColor);
+  }
+  .nextBtn:hover svg path {
+    fill: var(--whiteColor);
+  }
+  .prevBtn:hover svg path {
+    fill: var(--whiteColor);
+  }
+}
+@media (max-width: 1500px) {
+  .buttonBox {
+    justify-content: start;
+    margin-left: 130px;
+  }
+}

@@ -1,0 +1,243 @@
+.boxButton {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+.btnOrder {
+  padding: 10px 35px;
+  background-color: var(--greenColor);
+  color: var(--whiteColor);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.8%;
+  letter-spacing: 0.625px;
+  border-radius: 190px;
+  border: none;
+  margin: 50px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+@media (min-width: 768px) {
+  .btnOrder:hover {
+    background-color: var(--whiteColor);
+    color: var(--greenColor);
+    border: 2px solid var(--greenColor);
+  }
+}
+.increment,
+.decrement {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #dee6ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blackColor);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.item {
+  max-width: 577px;
+  transition: all 0.2s;
+  border-radius: 30px;
+}
+
+.elemImage {
+  width: 577px;
+  height: 288px;
+  object-fit: cover;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.2;
+}
+
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  color: var(--blackColor);
+  font-family: var(--secondFamily);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.listContent {
+  padding-inline: 20px;
+  margin-bottom: 30px;
+}
+.titleBox {
+  padding-inline: 20px;
+  margin: 10px 0;
+}
+.itemWeight,
+.itemCallories {
+  color: var(--greenColor);
+  font-family: var(--secondFamily);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133.8%;
+  letter-spacing: 0.45px;
+}
+.itemContent {
+  color: var(--blackColor);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.8%;
+  letter-spacing: 0.35px;
+  margin-bottom: 8px;
+  list-style: auto;
+}
+.itemContent::marker {
+  color: var(--greenColor);
+  font-size: 15px;
+}
+.footerItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding-inline: 20px;
+}
+.footerPrice {
+  color: var(--greenColor);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.busketBgActive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.438);
+  z-index: 100;
+  transition: all 0.2s;
+}
+.busketBg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: transparent;
+  z-index: 100;
+  transition: all 0.2s;
+}
+.innerBusketActive {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+  z-index: 101;
+  transition: all 0.2s;
+}
+.innerBusket {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+  z-index: 100;
+  transition: all 0.2s;
+}
+.closeBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--greenColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: transparent;
+  margin: 5px;
+  margin-left: auto;
+}
+.busketTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.busketBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  border-bottom: 2px solid #4e4e4e96;
+  padding-inline: 5px;
+}
+.busketBox p {
+  width: 100%;
+  padding-block: 10px;
+}
+.busketSum,
+.busetCost {
+  text-align: center;
+}
+.busketFullCost {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .item:hover {
+    scale: 1.001;
+    box-shadow: 0px 0px 20px 0px rgba(86, 86, 86, 0.5);
+  }
+}
+@media (max-width: 600px) {
+  .item {
+    max-width: 600px;
+    width: 100%;
+  }
+  .elemImage {
+    width: 100%;
+  }
+  .titleBox {
+    margin-bottom: 15px;
+  }
+  .title {
+    max-width: 200px;
+    font-size: 15px;
+  }
+  .itemWeight,
+  .itemCallories {
+    font-size: 14px;
+  }
+  .itemContent {
+    font-size: 12px;
+  }
+  .footerPrice {
+    font-size: 14px;
+  }
+}

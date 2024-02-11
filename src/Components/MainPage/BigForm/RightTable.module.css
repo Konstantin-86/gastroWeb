@@ -1,0 +1,62 @@
+.innerRightTable {
+  width: 100%;
+}
+.allDays {
+  width: 780px;
+  border-radius: 30px;
+  background: var(--whiteColor);
+  box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 50px 11px 50px;
+  margin-bottom: 20px;
+}
+.itemDay {
+  cursor: pointer;
+  color: var(--blackColor);
+  font-family: var(--secondFamily);
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.itemDayActive {
+  color: var(--greenColor);
+  cursor: pointer;
+  font-family: var(--secondFamily);
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .allDays {
+    max-width: 780px;
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .allDays {
+    max-width: 465px;
+    padding: 12px 30px 8px 30px;
+  }
+  .itemDay,
+  .itemDayActive {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1023px) {
+  .allDays {
+    max-width: 580px;
+    height: 45px;
+    margin: 0 5px;
+    padding: 16px 19px 13px 16px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .allDays {
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+}

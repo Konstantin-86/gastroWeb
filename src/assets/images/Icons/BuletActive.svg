@@ -1,0 +1,20 @@
+<svg width="14" height="14">
+        <circle
+          cx="7"
+          cy="7"
+          r="6"
+          fill="transparent"
+          stroke="#64d370;"
+          strokeWidth="2"
+        />
+        <circle
+          cx="7"
+          cy="7"
+          r="6"
+          fill="transparent"
+          stroke="#DEE6EE"
+          strokeWidth="2"
+          strokeDasharray="9, 124"
+          transform="rotate(-90, 7, 7)"
+        />
+      </svg>

@@ -1,0 +1,38 @@
+.innerTextTable {
+  max-width: 380px;
+  padding: 40px 0;
+  border-radius: 30px;
+  color: var(--blackColor);
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+.item span {
+  width: 122px;
+}
+.item span:first-child {
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  .item span {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .innerTextTable {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .innerTextTable {
+    display: block;
+    width: 100%;
+  }
+}

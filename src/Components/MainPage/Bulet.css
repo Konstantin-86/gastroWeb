@@ -1,0 +1,29 @@
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--greenColor);
+  opacity: 1;
+  background: transparent;
+}
+.swiper-pagination-bullet-active {
+  border: 2px solid var(--blackColor) !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 6px !important;
+  width: 70px !important;
+  left: 50% !important;
+  transform: translate(-50%) !important;
+}
+@media (max-width: 1500px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 6px !important;
+    width: 70px !important;
+    left: 162px !important;
+    transform: translate(0) !important;
+  }
+}

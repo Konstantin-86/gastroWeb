@@ -1,0 +1,38 @@
+.title {
+  color: var(--blackColor);
+  text-align: center;
+  font-family: var(--secondFamily);
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+.mySecondSlider {
+  width: 120%;
+  height: 100%;
+}
+
+.imgItem {
+  width: 380px;
+  height: 570px;
+  object-fit: cover;
+  overflow: hidden;
+}
+@media (max-width: 1367px) {
+  .imgItem {
+    width: 270px;
+    height: 404px;
+  }
+  .mySecondSlider {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .imgItem {
+    width: 240px;
+    height: 346px;
+  }
+  .mySecondSlider {
+    margin-bottom: 100px;
+  }
+}
