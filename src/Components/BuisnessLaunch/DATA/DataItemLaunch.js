@@ -1,6 +1,13 @@
+import launch1 from "../../../assets/images/launch/1.jpg";
+import launch2 from "../../../assets/images/launch/2.jpg";
+import launch3 from "../../../assets/images/launch/3.jpg";
+import launch4 from "../../../assets/images/launch/4.jpg";
+import launch5 from "../../../assets/images/launch/5.jpg";
+import launch6 from "../../../assets/images/launch/6.jpg";
+
 export const itemLaunch = [
   {
-    image: "src/assets/images/launch/1.jpg",
+    image: launch1,
     title: "Бизнес-ланч “Рыбный”",
     weight: "250 г",
     callories: "346 ккал",
@@ -13,7 +20,7 @@ export const itemLaunch = [
     priceForOne: 500,
   },
   {
-    image: "src/assets/images/launch/3.jpg",
+    image: launch3,
     title: "Мексиканские фаджитас",
     weight: "250 г",
     callories: "346 ккал",
@@ -26,7 +33,7 @@ export const itemLaunch = [
     priceForOne: 470,
   },
   {
-    image: "src/assets/images/launch/4.jpg",
+    image: launch4,
     title: "Итальянская паста карбонара",
     weight: "250 г",
     callories: "346 ккал",
@@ -39,7 +46,7 @@ export const itemLaunch = [
     priceForOne: 470,
   },
   {
-    image: "src/assets/images/launch/5.jpg",
+    image: launch5,
     title: "Японский ролл Филадельфия",
     weight: "250 г",
     callories: "346 ккал",
@@ -52,7 +59,7 @@ export const itemLaunch = [
     priceForOne: 470,
   },
   {
-    image: "src/assets/images/launch/6.jpg",
+    image: launch6,
     title: "Французский рагу из говядины",
     weight: "250 г",
     callories: "346 ккал",
@@ -65,7 +72,7 @@ export const itemLaunch = [
     priceForOne: 470,
   },
   {
-    image: "src/assets/images/launch/2.jpg",
+    image: launch2,
     title: "Индийское карри с курицей",
     weight: "250 г",
     callories: "346 ккал",
