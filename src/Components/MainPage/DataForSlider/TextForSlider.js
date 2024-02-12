@@ -1,3 +1,7 @@
+import slide1 from "../../../assets/images/sliderImages/image1.jpg";
+import slide2 from "../../../assets/images/sliderImages/image2.jpg";
+import slide3 from "../../../assets/images/sliderImages/image3.jpg";
+
 const slideDATA = [
   {
     blackText: "Detox программа",
@@ -9,7 +13,7 @@ const slideDATA = [
     buttonText: "Заказать",
     priceText: "Пробный день всего:",
     priceNum: "427 руб",
-    srcImg: "/src/assets/images/sliderImages/image1.jpg",
+    srcImg: slide1,
   },
   {
     blackText: "Сервис правильного питания.",
@@ -17,7 +21,7 @@ const slideDATA = [
     buttonText: "Заказать",
     priceText: "Пробный день",
     priceNum: "- 30%",
-    srcImg: "/src/assets/images/sliderImages/image2.jpg",
+    srcImg: slide2,
   },
   {
     blackText: "Доверьтесь профессионалам.",
@@ -28,7 +32,7 @@ const slideDATA = [
     smallTextContinue: "института физкультуры(НуфвсУ).",
     buttonText: "Инстаграм",
     priceText: "Всегда открыт для клиентов",
-    srcImg: "/src/assets/images/sliderImages/image3.jpg",
+    srcImg: slide3,
   },
 ];
 export default slideDATA;

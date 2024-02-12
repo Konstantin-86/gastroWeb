@@ -19,10 +19,10 @@ const MainPage = () => {
 
       <Swiper
         loop={true}
-        autoplay={{
+        /*  autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }}
+        }} */
         pagination
         modules={[Autoplay, Navigation, Pagination]}
         className={styles.mySwip}
